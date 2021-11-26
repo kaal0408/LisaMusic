@@ -1,0 +1,48 @@
+queue = {}
+
+queue: list[dict] = []
+
+queue.append(
+    {
+        "chat_id": 123  # anggep 123 ini chat id kesatu
+    }
+)
+queue.extend([
+    {
+        "chat_id": 1234  # 1234 chat_id kedua
+    },
+    {
+        "chat_id": 12345  # dan ini chat_id ketiga
+    }
+])
+
+print(queue)
+
+
+class ChatQueue:
+    def __init__(self):
+        self.queue = []
+
+    def tambah_chat(self, chat_id: int):
+        queue = self.queue
+        queue.extend([{"chat_id": chat_id}])
+
+    def hapus_chat(self, chat_id):
+        queue = self.queue
+        queue.remove({"chat_id": chat_id})
+
+    @property
+    def ambil_jumlah_chat(self):
+        queue = self.queue
+        return len(queue)
+
+
+antri = ChatQueue()
+print(antri.queue)
+antri.tambah_chat(123)
+print(antri.queue)
+antri.tambah_chat(124)
+print(antri.queue)
+print(antri.ambil_jumlah_chat)
+antri.hapus_chat(123)
+print(antri.queue)
