@@ -15,7 +15,7 @@ async def gstats(_, message):
             pass
         else:
             return
-    m = await message.reply_text("__Running Yui SpeedTest__")
+    m = await message.reply_text("__Running Shubhanshu/Booo SpeedTest__")
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
