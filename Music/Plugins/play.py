@@ -121,7 +121,6 @@ async def play(_, message: Message):
     if audio:
         fucksemx = 1
         what = "Audio Searched"
-        await LOG_CHAT(message, what)
         mystic = await message.reply_text(f"**🔄 Processing Audio Given By {username}**")
         if audio.file_size > 157286400:
             await mystic.edit_text("❌ Audio File Size Should Be Less Than 150 mb") 
@@ -147,12 +146,11 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/Technical_Hunter"
+        link = "https://t.me/Timesisnotwaiting"
         thumb = "cache/audioplay.jpg"
         videoid = "smex1"
     elif url:
         what = "URL Searched"
-        await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
         mystic = await message.reply_text("Processing Url")
         ydl_opts = {"format": "bestaudio/best"}
@@ -234,7 +232,6 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             what = "Command"
-            await LOG_CHAT(message, what)
             user_name = message.from_user.first_name
             thumb ="cache/playlistthumb.jpg"
             buttons = playlist_markup(user_name, user_id)
