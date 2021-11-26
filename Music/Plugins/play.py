@@ -373,7 +373,7 @@ async def startyuplay(_,CallbackQuery):
     except Exception as e:
         return await CallbackQuery.message.reply_text(f"❌ Failed to download this video.\n\n**Reason**:{e}") 
     title = (x["title"])
-    await CallbackQuery.answer(f"Selected {title[:20]}.... \nProcessing...", show_alert=True)
+    await CallbackQuery.answer(f"Selected {title[:20]}.... \nProcessing...")
     mystic = await CallbackQuery.message.reply_text(f"Downloading {title[:50]}")
     thumbnail = (x["thumbnail"])
     idx = (x["id"])
