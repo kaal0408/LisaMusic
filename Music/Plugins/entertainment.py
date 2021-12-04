@@ -1,4 +1,4 @@
-# 🍀 © @tofik_dn
+# 🍀 © @d3nvil 
 # ⚠️ Do not remove credits
 
 import requests
