@@ -1,84 +1,102 @@
-import yt_dlp
-from pyrogram import filters
-from pyrogram import Client
-from Music import app, SUDOERS, BOT_ID, BOT_USERNAME, OWNER
-from Music import dbb, app, BOT_USERNAME, BOT_ID, ASSID, ASSNAME, ASSUSERNAME
-from Music.MusicUtilities.helpers.inline import start_keyboard, personal_markup
-from Music.MusicUtilities.helpers.thumbnails import down_thumb
-from Music.MusicUtilities.helpers.ytdl import ytdl_opts 
+import asyncio
+from time import time
+from datetime import datetime
+from Music import BOT_USERNAME
+from Music.config import UPDATES_CHANNEL, ZAID_SUPPORT
 from Music.MusicUtilities.helpers.filters import command
-from pyrogram.types import (
-    CallbackQuery,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    InputMediaPhoto,
-    Message,
+from Music.MusicUtilities.helpers.command import commandpro
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+
+
+START_TIME = datetime.utcnow()
+START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
+TIME_DURATION_UNITS = (
+    ('week', 60 * 60 * 24 * 7),
+    ('day', 60 * 60 * 24),
+    ('hour', 60 * 60),
+    ('min', 60),
+    ('sec', 1)
 )
-from Music.MusicUtilities.database.chats import (get_served_chats, is_served_chat, add_served_chat, get_served_chats)
-from Music.MusicUtilities.database.queue import (is_active_chat, add_active_chat, remove_active_chat, music_on, is_music_playing, music_off)
-from Music.MusicUtilities.database.sudo import (get_sudoers, get_sudoers, remove_sudo)
 
-     
-@Client.on_message(filters.private & filters.incoming & filters.command("start"))
-async def play(_, message: Message):
-    if len(message.command) == 1:
-        user_id = message.from_user.id
-        user_name = message.from_user.first_name
-        rpk = "["+user_name+"](tg://user?id="+str(user_id)+")" 
-        await app.send_message(message.chat.id,
-            text=f"Hello {rpk}!\n\nThis is Electro Private Music Bot.\nI play music on Telegram's Voice Chats.\n\nOnly for selected chats.",
-            parse_mode="markdown",
-            reply_markup=personal_markup,
-            reply_to_message_id=message.message_id
-        )
-    elif len(message.command) == 2:                                                           
-        query = message.text.split(None, 1)[1]
-        f1 = (query[0])
-        f2 = (query[1])
-        f3 = (query[2])
-        finxx = (f"{f1}{f2}{f3}")
-        if str(finxx) == "inf":
-            query = ((str(query)).replace("info_","", 1))
-            query = (f"https://www.youtube.com/watch?v={query}")
-            with yt_dlp.YoutubeDL(ytdl_opts) as ytdl:
-                x = ytdl.extract_info(query, download=False)
-            thumbnail = (x["thumbnail"])
-            searched_text = f"""
-🔍 __**Video Track Information**__
-
-❇️ **Title:** {x["title"]}
+async def _human_time_duration(seconds):
+    if seconds == 0:
+        return 'inf'
+    parts = []
+    for unit, div in TIME_DURATION_UNITS:
+        amount, seconds = divmod(int(seconds), div)
+        if amount > 0:
+            parts.append('{} {}{}'
+                         .format(amount, unit, "" if amount == 1 else "s"))
+    return ', '.join(parts)
+    
    
-⏳ **Duration:** {round(x["duration"] / 60)} Mins
-👀 **Views:** `{x["view_count"]}`
-👍 **Likes:** `{x["like_count"]}`
-👎 **Dislikes:** `{x["dislike_count"]}`
-⭐️ **Average Ratings:** {x["average_rating"]}
-🎥 **Channel Name:** {x["uploader"]}
-📎 **Channel Link:** [Visit From Here]({x["channel_url"]})
-🔗 **Link:** [Link]({x["webpage_url"]})
 
-⚡️ __Searched Powered By Electro Music Player__"""
-            link = (x["webpage_url"])
-            buttons = personal_markup(link)
-            userid = message.from_user.id
-            thumb = await down_thumb(thumbnail, userid)
-            await app.send_photo(message.chat.id,
-                photo=thumb,                 
-                caption=searched_text,
-                parse_mode="markdown",
-                reply_markup=InlineKeyboardMarkup(buttons),
-            )
-        if str(finxx) == "sud":
-            sudoers = await get_sudoers()
-            text = "**__Sudo Users List of Electro Music:-__**\n\n"
-            for count, user_id in enumerate(sudoers, 1):
-                try:                     
-                    user = await app.get_users(user_id)
-                    user = user.first_name if not user.mention else user.mention
-                except Exception:
-                    continue                     
-                text += f"➤ {user}\n"
-            if not text:
-                await message.reply_text("❌ No Sudo Users")  
-            else:
-                await message.reply_text(text)
+@Client.on_message(command("start") & filters.private & ~filters.edited)
+async def start_(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/f323bcaec71ba138fb6df.png",
+        caption=f"""**A Telegram Music Bot Based Mongodb.
+ Add Me To Ur Chat For and Help and And Support Click On Buttons  ...
+💞  These Features A.I Based 
+Powered By [ᴢᴀɪᴅ ʙᴏᴛꜱ](t.me/superior_bots) ...
+**""",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ ❰ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❱ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", url=f"https://t.me/SUPERIOR_BOTS/160"
+                    ),
+                    InlineKeyboardButton(
+                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/itsunknown-12/Zaid-Vc-Player"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "📢 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    ),
+                    InlineKeyboardButton(
+                        "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🇮🇳", url=f"https://t.me/{ZAID_SUPPORT}"
+                    )
+                ]
+                
+           ]
+        ),
+    )
+    
+    
+@Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/dd9ca2b2122dd68ffab0e.png",
+        caption=f"""Thanks For Adding Me To Ur Chat, For Any Query U Can Join Our Support Groups 🔥♥️""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ 💞", url=f"https://t.me/{SUPPORT_GROUP}")
+                ]
+            ]
+        ),
+    )
+
+
+@Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/92688f2c44a35ba673c23.png",
+        caption=f"""Here Is The Source Code Fork And Give Stars ✨""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/itsunknown-12/Zaid-Vc-Player")
+                ]
+            ]
+        ),
+    )
