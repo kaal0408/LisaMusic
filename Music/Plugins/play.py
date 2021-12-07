@@ -66,7 +66,7 @@ async def play(_, message: Message):
     username = message.from_user.first_name
     checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
     if await is_on_off(1):
-        LOG_ID = "-1001429892362"
+        LOG_ID = "-1001146457050"
         if int(chat_id) != int(LOG_ID):
             return await message.reply_text(f">> ❌ Bot is under Maintenance, Sorry for the inconvenience!")
         return await message.reply_text(f">> ❌ Bot is under Maintenance, Sorry for the inconvenience!")
