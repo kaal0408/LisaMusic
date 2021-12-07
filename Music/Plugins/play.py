@@ -147,7 +147,7 @@ async def play(_, message: Message):
         )
         title = "Selected Audio from Telegram"
         link = "https://t.me/Timesisnotwaiting"
-        thumb = "cache/audioplay.jpg"
+        thumb = "cache/vc.png"
         videoid = "smex1"
     elif url:
         what = "URL Searched"
@@ -233,7 +233,7 @@ async def play(_, message: Message):
         if len(message.command) < 2:
             what = "Command"
             user_name = message.from_user.first_name
-            thumb ="cache/playlistthumb.jpg"
+            thumb ="cache/vc.png"
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
@@ -265,7 +265,7 @@ async def play(_, message: Message):
             ID5 = (result[4]["id"])
         except Exception as e:
             return await mystic.edit_text(f"❌ Soung Not Found.\n**Possible Reason:**{e}")
-        thumb ="cache/20211103_135204.jpg"
+        thumb ="cache/vc.png"
         await mystic.delete()   
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
@@ -548,7 +548,7 @@ async def popat(_,CallbackQuery):
         
 @app.on_message(filters.command("playplaylist"))
 async def play_playlist_cmd(_, message):
-    thumb ="cache/playlistthumb.jpg"
+    thumb ="cache/vc.png"
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     buttons = playlist_markup(user_name, user_id)
