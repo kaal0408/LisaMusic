@@ -12,32 +12,32 @@
         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": ""
+            "value": "2068551800"
         },
         "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
-            "value": ""
+            "value": "2130708318"
         },
         "LOG_GROUP_ID": {
             "description": "create a private group and get the group id, add your bot as admin to the group too",
             "required": true,
-            "value": ""
+            "value": "-1001146457050"
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "10488815"
         },
         "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "a1ca5fb81d26056a34b6390e634fc58f"
         },
         "SUDO_USERS": {
             "description": "fill with the user id who can access all function in your bot (separate with space).",
             "required": true,
-            "value": ""
+            "value": "2068551800"
         },
         "DURATION_LIMIT": {
             "description": "filled, don't change this !",
