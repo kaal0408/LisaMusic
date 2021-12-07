@@ -67,7 +67,7 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("❌ Lyrics not found :p")
     xxx = f"""
-**Lyrics Search Powered By Yukki Music Player**
+**Lyrics Search Powered By vc Music Player**
 
 **Searched Song:-** __{query}__
 
