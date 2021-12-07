@@ -29,7 +29,7 @@ print(f"[INFO]: ASSISTANT STARTED AS {ASSNAME}!")
 async def load_start():
     restart_data = await clean_restart_stage()
     if restart_data:
-        print("[INFO]: SENDING RESTART STATUS TO YUKKI SERVER")
+        print("[INFO]: SENDING RESTART STATUS TO KAAL SERVER")
         try:
             await app.edit_message_text(
                 restart_data["chat_id"],
@@ -53,7 +53,7 @@ async def load_start():
             pass     
     await app.send_message(LOG_GROUP_ID, "Vc Music Bot Started")
     await client.send_message(LOG_GROUP_ID, "Assistant Of Music Music Started")
-    print("[INFO]: STARTED THE MUSIC BOT AND SENDING THE INFO TO ANIE SERVER")
+    print("[INFO]: STARTED THE MUSIC BOT AND SENDING THE INFO TO KAAL SERVER")
     
    
 loop = asyncio.get_event_loop()
@@ -63,4 +63,4 @@ run()
 idle()
 loop.close()
 
-print("[LOG] CLOSING THE ANIE MUSIC BOT")
+print("[LOG] CLOSING THE VC MUSIC BOT")
