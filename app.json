@@ -1,7 +1,7 @@
 {
-    "name": "AnieMusicNew",
+    "name": "Musicvc",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
-    "keywords": ["music", "voice chat", "telegram", "Anie", "Anie Music", "Private Music"],
+    "keywords": ["music", "voice chat", "telegram", "vc", "vc Music", "Private Music"],
     "repository": "https://github.com/Anieteam/Anievc",
     "stack": "container",
     "env": {
@@ -12,32 +12,32 @@
         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": "1782996378"
+            "value": ""
         },
         "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
-            "value": "1878276489"
+            "value": ""
         },
         "LOG_GROUP_ID": {
             "description": "create a private group and get the group id, add your bot as admin to the group too",
             "required": true,
-            "value": "-1001429892362"
+            "value": ""
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
-            "value": "6702275"
+            "value": ""
         },
         "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true,
-            "value": "1a77c74045f27f401a758542d1f7d096"
+            "value": ""
         },
         "SUDO_USERS": {
             "description": "fill with the user id who can access all function in your bot (separate with space).",
             "required": true,
-            "value": "1782996378"
+            "value": ""
         },
         "DURATION_LIMIT": {
             "description": "filled, don't change this !",
@@ -47,7 +47,7 @@
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": false,
-            "value": "1882820111:AAH9GJMA1GH9jHJM-bjp7Wm7Uj1NrfjypCQ"
+            "value": ""
         },
         "MONGO_DB_URI": {
             "description": "fill with the mongodb url get from mongodb.cloud.com (don't use mine below !)",
