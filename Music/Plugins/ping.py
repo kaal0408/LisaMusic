@@ -20,12 +20,12 @@ Disk: {disk}%'''
     return stats
 
 
-@app.on_message(filters.command(["mping", "ping@Anierbot_bot"]))
+@app.on_message(filters.command(["ping", "ping@MAHADEVMusicbot"]))
 async def ping(_, message):
     uptime = await bot_sys_stats()
     start = datetime.now()
     response = await message.reply_photo(
-        photo="cache/vcc.png",
+        photo="cache/vc.png",
         caption=">> Pong!"
     )
     end = datetime.now()
