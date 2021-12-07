@@ -40,7 +40,7 @@ options = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", 
 
 @app.on_message(filters.command("playlist"))
 async def pause_cmd(_, message):
-    thumb ="cache/playlistthumb.jpg"
+    thumb ="cache/vc.png"
     await message.reply_photo(
     photo=thumb, 
     caption=("**__Music's Playlist Feature__**\n\nSelect The Playlist, You want to check!"),    
@@ -48,7 +48,7 @@ async def pause_cmd(_, message):
     return 
 
 
-@app.on_message(filters.command("delmyplaylist"))
+@app.on_message(filters.command("delyplaylist"))
 async def pause_cmd(_, message):
     usage = ("Usage:\n\n/delmyplaylist [Numbers between 1-30] ( to delete a particular music in playlist )\n\nor\n\n /delmyplaylist all ( to delete whole playlist )")
     if len(message.command) < 2:
