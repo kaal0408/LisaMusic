@@ -14,6 +14,11 @@
             "required": true,
             "value": "2068551800"
         },
+        "BOT_USERNAME":{
+        "description": "Please get it from @BotFather",
+        "required": true,
+        "value": " " 
+        },
         "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
