@@ -55,8 +55,9 @@ def time_to_seconds(time):
     return sum(
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
+BOT_USERNAME = os.environ.get("BOT_USERNAME", " ")
 
-@Client.on_message(command(["play", "play@MAHADEVMusicbot"]))
+@Client.on_message(command(["play", "play{BOT_USERNAME}"]))
 async def play(_, message: Message):
     chat_id = message.chat.id  
     if message.sender_chat:
