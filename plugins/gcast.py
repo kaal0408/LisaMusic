@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By AdityaPlayer
+
 
 import asyncio
 from pyrogram import Client, filters
