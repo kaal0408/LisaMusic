@@ -38,7 +38,7 @@ async def start_(client: Client, message: Message):
 💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
 ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ Owner : [Owner](https://t.me/adityahalder)
+┣★ Owner : [Owner](https://t.me/Murat_30_God)
 
 ┣★ updates : [Support channel](https://t.me/Murat_30_God)
 
