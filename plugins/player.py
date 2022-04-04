@@ -177,6 +177,10 @@ async def play(_, message: Message):
                             url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
 
                 ]
+                [
+                    InlineKeyboardButton(
+                        " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
+                ]
             ]
         )
 
@@ -216,6 +220,10 @@ async def play(_, message: Message):
                             url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
 
                 ]
+                [
+                    InlineKeyboardButton(
+                        " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
+                ]
             ]
         )
 
@@ -231,6 +239,10 @@ async def play(_, message: Message):
                             text="💥 Youtube 💞",
                             url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
 
+                ]
+                [
+                    InlineKeyboardButton(
+                        " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
                 ]
             ]
         )
@@ -285,6 +297,10 @@ async def play(_, message: Message):
                             text="💥 Youtube💞",
                             url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
 
+                ]
+                [
+                    InlineKeyboardButton(
+                        " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
                 ]
             ]
         )
