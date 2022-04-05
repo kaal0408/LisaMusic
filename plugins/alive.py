@@ -97,7 +97,7 @@ async def help(client: Client, message: Message):
                     InlineKeyboardButton(
                         " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
                 ]
-               [
+                [
                     InlineKeyboardButton(
                         "YouTube", url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
                 ] 
