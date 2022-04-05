@@ -290,20 +290,7 @@ async def play(_, message: Message):
             print(str(e))
             return
 
-        keyboard = InlineKeyboardMarkup(
-            [
-                [
-                        InlineKeyboardButton(
-                            text="💥 Youtube💞",
-                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
-
-                ]
-                [
-                    InlineKeyboardButton(
-                        " 💞 Make your own bot 💞", url=f"https://github.com/kaal0408/Music")
-                ]
-            ]
-        )
+        
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
