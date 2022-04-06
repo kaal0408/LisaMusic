@@ -167,7 +167,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/DhrubaXD"),
+                            url=f"https://t.me/Murat_30_God"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -175,13 +175,13 @@ async def play(_, message: Message):
                ],
                 [
                     InlineKeyboardButton(
-                            text="Support",
-                            url=f"https://t.me/Official_K_LegendBot")
+                            text="YouTube",
+                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
                ],
                [
                         InlineKeyboardButton(
-                            text="🔰 Help 🔰",
-                            url=f"https://t.me/Legend_K_Userbot")
+                            text="🔰 Commands 🔰",
+                            url=f"https://telegra.ph/Music-04-06-2")
                    
                 ]
             ]
@@ -220,7 +220,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/DhrubaXD"),
+                            url=f"https://t.me/Murat_30_God"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -228,13 +228,13 @@ async def play(_, message: Message):
                ],
                 [
                     InlineKeyboardButton(
-                            text="Support",
-                            url=f"https://t.me/Official_K_LegendBot")
+                            text="YouTube",
+                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
                ],
                [
                         InlineKeyboardButton(
-                            text="🔰 Help 🔰",
-                            url=f"https://t.me/Legend_K_Userbot")
+                            text="🔰 Commands 🔰",
+                            url=f"https://telegra.ph/Music-04-06-2")
                    
                 ]
             ]
@@ -258,13 +258,13 @@ async def play(_, message: Message):
                ],
                 [
                     InlineKeyboardButton(
-                            text="Support",
-                            url=f"https://t.me/Official_K_LegendBot")
+                            text="YouTube",
+                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
                ],
                [
                         InlineKeyboardButton(
-                            text="🔰 Help 🔰",
-                            url=f"https://t.me/Legend_K_Userbot")
+                            text="🔰 Commands 🔰",
+                            url=f"https://telegra.ph/Music-04-06-2")
                    
                 ]
             ]
@@ -318,7 +318,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/DhrubaXD"),
+                            url=f"https://t.me/Murat_30_God"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -326,13 +326,13 @@ async def play(_, message: Message):
                ],
                 [
                     InlineKeyboardButton(
-                            text="Support",
-                            url=f"https://t.me/Official_K_LegendBot")
+                            text="Youtube",
+                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
                ],
                [
                         InlineKeyboardButton(
-                            text="🔰 Help 🔰",
-                            url=f"https://t.me/Legend_K_Userbot")
+                            text="🔰 Commands 🔰",
+                            url=f"https://telegra.ph/Music-04-06-2")
                    
                 ]
             ]
