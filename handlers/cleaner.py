@@ -1,5 +1,3 @@
-# Copyright (C) 2022 By #SmokerMusicX
-# Copyright (C) 2022 By Legendary-os
 
 import os
 from pyrogram import Client, filters
