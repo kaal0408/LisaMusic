@@ -157,7 +157,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/b8bc5495bd8a3e9ccb2d3.jpg"
+        thumb_name = "https://telegra.ph/file/c247284e8ddc50f01a314.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -242,7 +242,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/8c3abf591121615cdef42.jpg"
+            thumb_name = "https://telegra.ph/file/c247284e8ddc50f01a314.png"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -369,7 +369,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="final.png",
+            photo="https://telegra.ph/file/c247284e8ddc50f01a314.png",
             reply_markup=keyboard,
             caption="**▶️ Legendary Music Bot Is Playin Now In** ➡️ `{}`\n**Title:** {}\n**Duration:** {}\nViews: {}".format(
         message.chat.title, results[i]['title'], results[i]['duration'], results[i]['views']
