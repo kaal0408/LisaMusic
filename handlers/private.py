@@ -16,7 +16,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "♥️ Creator ♥️", url=f"https://t.me/Murat_30_God")
+                        "♥️ Creator ♥️", url=f"https://t.me/ABHIISH3K_xD")
                ],
                 [
                     InlineKeyboardButton(
@@ -24,11 +24,11 @@ async def start_(client: Client, message: Message):
                ], 
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 YouTube", url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
+                        "👨‍💻 YouTube", url=f"https://youtube.com/c/TrickyAbhi")
                ],
                 [
                     InlineKeyboardButton(
-                        "💝 Commands 💝", url=f"https://telegra.ph/Music-04-06-2")
+                        "💝 Commands 💝", url=f"https://telegra.ph/file/f50911b821563d74eaa55.jpg")
                 ]
                 
            ]
