@@ -167,7 +167,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/Murat_30_God"),
+                            url=f"https://t.me/ABHIISH3K_xD"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -176,12 +176,12 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="YouTube",
-                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
+                            url=f"https://youtube.com/c/TrickyAbhi")
                ],
                [
                         InlineKeyboardButton(
                             text="🔰 Commands 🔰",
-                            url=f"https://telegra.ph/Music-04-06-2")
+                            url=f"https://telegra.ph/file/f50911b821563d74eaa55.jpg")
                    
                 ]
             ]
@@ -220,7 +220,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/Murat_30_God"),
+                            url=f"https://t.me/ABHIISH3K_xD"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -229,12 +229,12 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="YouTube",
-                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
+                            url=f"https://youtube.com/c/TrickyAbhi")
                ],
                [
                         InlineKeyboardButton(
                             text="🔰 Commands 🔰",
-                            url=f"https://telegra.ph/Music-04-06-2")
+                            url=f"https://telegra.ph/file/f50911b821563d74eaa55.jpg")
                    
                 ]
             ]
@@ -250,7 +250,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💝 Owner 💝",
-                            url=f"https://t.me/DhrubaXD"),
+                            url=f"https://t.me/ABHIISH3K_xD"),
                             
                     InlineKeyboardButton(
                             text="👨‍💻 Assistant",
@@ -259,7 +259,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="YouTube",
-                            url=f"https://youtube.com/channel/UCpZBwvZJdRsInUBgAWfpVMA")
+                            url=f"https://youtube.com/c/TrickyAbhi")
                ],
                [
                         InlineKeyboardButton(
