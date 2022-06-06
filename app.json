@@ -33,6 +33,7 @@
     "MASTER_USERNAME": {
       "description": "Write Ur Username(Without @ Or With @).",
       "required": true
+      "value": "Murat_30_God"
     },
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes) i suggest 20-30 min.",
