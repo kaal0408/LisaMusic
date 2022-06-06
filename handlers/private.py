@@ -55,3 +55,23 @@ async def help(client: Client, message: Message):
             ]
         ),
     )
+
+
+@bot.on_callback_query(filters.regex("cbcmds"))
+async def cbcmds(_, query: CallbackQuery):
+    await query.answer("Commands Menu")
+    await query.edit_message_text(
+        f"""**» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «**
+» /play (Song Name/Link) - Play Music
+» /pause - Pause The Song
+» /resume - Resume The Song
+» /skip - switch to next Song
+» /end - Stop The Streaming
+» /join or /userbotjoin - Invite Assistant To Your Group
+» /mute - Mute The Assistant On Voice Chat
+» /unmute - UnMute The Assistant On Voice Chat
+» /playlist - Show You The Playlist
+» /broadcast  - To broadcast a message (sudo)
+» /gcast  - To broadcast a message (sudo)
+» /restart - Restart The Bot
+🥵 __𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 Manjeet__ 🥵""")
