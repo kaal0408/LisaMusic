@@ -12,7 +12,7 @@ from youtube_search import YoutubeSearch
 import converter
 from downloaders import youtube
 from config import DURATION_LIMIT
-#from helpers.filters import command
+from helpers.filters import command
 from helpers.decorators import errors
 from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
@@ -22,7 +22,7 @@ from PIL import Image, ImageFont, ImageDraw
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
-from pyrogram import filters
+
 bot_username = os.environ.get("BOT_NAME", None)
 
 if "@" in bot_username:
