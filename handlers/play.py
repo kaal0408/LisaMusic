@@ -22,6 +22,7 @@ from PIL import Image, ImageFont, ImageDraw
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
+from pyrogram import filters
 
 bot_username = os.environ.get("BOT_NAME", None)
 
