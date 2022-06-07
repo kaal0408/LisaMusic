@@ -5,7 +5,7 @@ from helpers.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import authorized_users_only
 from callsmusic.callsmusic import client as user
-
+from pyrogram import filters
 
 @Client.on_message(
     command(["join", "assistant"]) & ~filters.private & ~filters.bot
