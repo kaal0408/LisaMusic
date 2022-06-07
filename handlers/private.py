@@ -8,7 +8,7 @@ from pyrogram import Client, filters
 from pyrogram.raw.base import Update
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, Message
-
+from pyrogram import filters
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
