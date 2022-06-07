@@ -9,7 +9,7 @@ from helpers.filters import command, other_filters
 from callsmusic import callsmusic, queues
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
-
+from pyrogram import filters
 
 ACTV_CALLS = []
 
