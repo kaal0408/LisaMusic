@@ -9,7 +9,7 @@ from pyrogram.raw.base import Update
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, Message
 from pyrogram import filters
-from main import bot1 as bot
+
 
 @Client.on_message(command("start") & filters.private )
 async def start_(client: Client, message: Message):
@@ -35,7 +35,7 @@ async def start_(client: Client, message: Message):
                ],
                 [
                     InlineKeyboardButton(
-                        "💝 Commands 💝", callback_data=f"cbcmds")
+                        "💝 Commands 💝", url=f"https://telegra.ph/Music-04-06-2")
                 ]
                 
            ]
@@ -58,21 +58,3 @@ async def help(client: Client, message: Message):
     )
 
 
-@bot.on_callback_query(filters.regex("cbcmds"))
-async def cbcmds(_, query: CallbackQuery):
-    await query.answer("Commands Menu")
-    await query.edit_message_text(
-        f"""**» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «**
-» /play (Song Name/Link) - Play Music
-» /pause - Pause The Song
-» /resume - Resume The Song
-» /skip - switch to next Song
-» /end - Stop The Streaming
-» /join or /userbotjoin - Invite Assistant To Your Group
-» /mute - Mute The Assistant On Voice Chat
-» /unmute - UnMute The Assistant On Voice Chat
-» /playlist - Show You The Playlist
-» /broadcast  - To broadcast a message (sudo)
-» /gcast  - To broadcast a message (sudo)
-» /restart - Restart The Bot
-🥵 __𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 Manjeet__ 🥵""")
