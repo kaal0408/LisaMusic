@@ -10,7 +10,7 @@ from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, Message
 from pyrogram import filters
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(command("start") & filters.private )
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c247284e8ddc50f01a314.png",
@@ -41,7 +41,7 @@ async def start_(client: Client, message: Message):
        ),
     )
 
-@Client.on_message(command(["repo"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["repo"]) & filters.group )
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c247284e8ddc50f01a314.png",
