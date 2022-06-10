@@ -9,13 +9,60 @@ from Music import client
 from Music.database.functions import clean_restart_stage
 from Music.database.queue import get_active_chats, remove_active_chat
 from Music.tgcalls.calls import run
-from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, OWNER_ID, BOT_NAME
+from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, BOT_NAME
 
+"from Music.config import BOT_NAME"
+"from Music.config import UPSTREAM_BRANCH"
+"from Music.config import UPSTREAM_REPO"
+"from Music.config import UPDATE"
+"from Music.config import SUPPORT"
+"from Music.config import START_IMG"
+"from Music.config import DURATION_LIMIT"
+"from Music.config import MONGO_DB_URI"
 
 response = requests.get(BG_IMG)
 with open("./etc/foreground.png", "wb") as file:
     file.write(response.content)
 
+if BOT_NAME:
+    BOT_NAME = config.BOT_NAME
+else: 
+    BOT_NAME = 'KaalXMusic'
+
+if UPSTREAM_BRANCH:
+    UPSTREAM_BRANCH = config.UPSTREAM_BRANCH
+else: 
+    UPSTREAM_BRANCH = 'master'
+
+if UPSTREAM_REPO: 
+    UPSTREAM_REPO = config.UPSTREAM_REPO
+else: 
+    UPSTREAM_REPO = 'www.github.com/kaal0408/Music'
+
+if UPDATE:
+    UPDATE = config.UPDATE
+else: 
+    UPDATE = 'Murat_30_God'
+
+if SUPPORT:
+    SUPPORT = config.SUPPORT
+else: 
+    SUPPORT = 'Murat_30_God'
+
+if START_IMG:
+    START_IMG = config.START_IMG
+else: 
+    START_IMG = 'https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg'
+
+if DURATION_LIMIT:
+    DURATION_LIMIT = config.DURATION_LIMIT
+else: 
+    DURATION_LIMIT = '180'
+
+if MONGO_DB_URI:
+    MONGO_DB_URI = config.MONGO_DB_URI
+else: 
+    MONGO_DB_URI = 'mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority'
 
 async def load_start():
     restart_data = await clean_restart_stage()
