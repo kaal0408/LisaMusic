@@ -7,7 +7,6 @@ from Codexun import config
 
 
 SUDO_USERS = config.SUDO_USERS
-OWNER_ID = config.OWNER_ID
 BOT_ID = config.BOT_ID
 BOT_NAME = ""
 BOT_USERNAME = ""
@@ -15,7 +14,7 @@ ASSID = config.ASSID
 ASSNAME = ""
 ASSUSERNAME = ""
 SUDOERS = SUDO_USERS
-OWNER = OWNER_ID
+
 
 ### Boot Time
 boottime = time.time()
@@ -28,7 +27,7 @@ pytgcalls = PyTgCalls(smexy)
 Music_START_TIME = time.time()
 
 app = Client(
-    "codexunmusic",
+    "Music",
     config.API_ID,
     config.API_HASH,
     bot_token=config.BOT_TOKEN,
