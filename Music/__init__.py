@@ -3,7 +3,7 @@ import importlib
 from pytgcalls import PyTgCalls
 import time
 from pyrogram import Client
-from Codexun import config
+from Music import config
 
 
 SUDO_USERS = config.SUDO_USERS
