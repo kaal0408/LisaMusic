@@ -64,15 +64,8 @@
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
             "value": ""
-        },      
-    },
-    "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    },
-    {
-      "url": "heroku/python"
         }
+        }
+
     }
-  ]
-}
+  }     
