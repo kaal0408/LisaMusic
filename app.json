@@ -1,7 +1,7 @@
 {
     "name": "MusicBot",
     "description": "Telegram Music Bot  allows you to stream music trought the telegram voice chat feature.",
-    "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
+    "keywords": ["telegram music bot", "voice chat", "pytgcalls", "PyroGram"],
     "repository": "https://github.com/kaal0408/Music",
   "stack": "container",
     "env": {
