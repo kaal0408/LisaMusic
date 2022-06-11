@@ -1,10 +1,9 @@
 {
     "name": "MusicBot",
     "description": "Telegram Music Bot  allows you to stream music trought the telegram voice chat feature.",
-    "logo": "https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg",
     "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
     "repository": "https://github.com/kaal0408/Music",
-    "stack": "container",
+  "stack": "container",
     "env": {
         "SESSION_NAME": {
             "description": "fill with the pyrogram session string of your assistant account",
