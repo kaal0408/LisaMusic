@@ -1,5 +1,5 @@
 from typing import Dict, List, Union
-from Codexun.database import db
+from Music.database import db
 
 pytgdb = db.pytg
 admindb = db.admin
