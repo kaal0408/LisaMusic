@@ -3,7 +3,7 @@ from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
 
-from Codexun.config import SUDO_USERS
+from Music.config import SUDO_USERS
 
 
 def errors(func: Callable) -> Callable:
