@@ -2,7 +2,7 @@ import sys
 import traceback
 from functools import wraps
 from pyrogram import Client
-from Codexun.config import OWNER_ID
+from Music.config import SUDO_USERS as OWNER_ID
 
 
 def split_limits(text):
