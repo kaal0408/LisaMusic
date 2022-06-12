@@ -12,8 +12,6 @@ from Music.tgcalls.calls import run
 from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, BOT_NAME
 
 "from Music.config import BOT_NAME"
-"from Music.config import UPSTREAM_BRANCH"
-"from Music.config import UPSTREAM_REPO"
 "from Music.config import UPDATE"
 "from Music.config import SUPPORT"
 "from Music.config import START_IMG"
@@ -28,16 +26,6 @@ if BOT_NAME:
     BOT_NAME = config.BOT_NAME
 else: 
     BOT_NAME = 'KaalXMusic'
-
-if UPSTREAM_BRANCH:
-    UPSTREAM_BRANCH = config.UPSTREAM_BRANCH
-else: 
-    UPSTREAM_BRANCH = 'master'
-
-if UPSTREAM_REPO: 
-    UPSTREAM_REPO = config.UPSTREAM_REPO
-else: 
-    UPSTREAM_REPO = 'www.github.com/kaal0408/Music'
 
 if UPDATE:
     UPDATE = config.UPDATE
