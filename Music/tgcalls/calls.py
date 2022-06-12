@@ -6,7 +6,7 @@ from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
 
-from Codexun.database.queue import (
+from Music.database.queue import (
     is_active_chat,
     add_active_chat,
     remove_active_chat,
@@ -14,8 +14,8 @@ from Codexun.database.queue import (
     is_music_playing,
     music_off,
 )
-from Codexun.config import API_HASH, API_ID, SESSION_NAME
-from Codexun.tgcalls import queues
+from Music.config import API_HASH, API_ID, SESSION_NAME
+from Music.tgcalls import queues
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
 pytgcalls = PyTgCalls(client)
