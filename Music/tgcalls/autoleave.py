@@ -1,5 +1,5 @@
 from pyrogram.errors import PeerIdInvalid, UserNotParticipant
-from Codexun import pytgcalls, smexy as user
+from Music import pytgcalls, smexy as user
 
 
 async def leave_from_inactive_call():
