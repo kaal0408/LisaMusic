@@ -7,9 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 from Music.utils.filters import command
 
 from Music import BOT_NAME, BOT_USERNAME
-from Music.config import BOT_USERNAME 
-from Music.config import BOT_NAME
-from Music.config import START_IMG
+from Music.config import * 
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
