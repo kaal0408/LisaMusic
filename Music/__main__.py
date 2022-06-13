@@ -11,12 +11,12 @@ from Music.database.queue import get_active_chats, remove_active_chat
 from Music.tgcalls.calls import run
 from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, BOT_NAME
 
-"from Music.config import BOT_NAME as BOT_NAME"
-"from Music.config import UPDATE as UPDATE"
-"from Music.config import SUPPORT as SUPPORT"
-"from Music.config import START_IMG as START_IMG"
-"from Music.config import DURATION_LIMIT as DURATION_LIMIT"
-"from Music.config import MONGO_DB_URI as DONGO_DB_URI"
+from Music.config import BOT_NAME
+from Music.config import UPDATE
+from Music.config import SUPPORT
+from Music.config import START_IMG
+from Music.config import DURATION_LIMIT
+from Music.config import MONGO_DB_URI
 
 response = requests.get(BG_IMG)
 with open("./etc/foreground.png", "wb") as file:
