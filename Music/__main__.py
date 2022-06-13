@@ -19,17 +19,18 @@ with open("./etc/foreground.png", "wb") as file:
     file.write(response.content)
 
 # Directly access!
-BOT_NAME = os.environ.get("BOT_NAME", "") else "kaalxmusic"
+BOT_NAME = os.environ.get("BOT_NAME", "")
 
-UPDATE = os.environ.get("UPDATE", "") else "Murat_30_God"
+
+UPDATE = os.environ.get("UPDATE", "") if os.environ.get("UPDATE", "") else "Murat_30_God"
     
-SUPPORT = os.environ.get("SUPPORT", "") else "Murat_30_God"
+SUPPORT = os.environ.get("SUPPORT", "") if os.environ.get("SUPPORT", "") else "Murat_30_God"
     
-START_IMG = os.environ.get("SUPPORT", "") else "https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg"
+START_IMG = os.environ.get("SUPPORT", "") if os.environ.get("START_IMG", "") else "https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg"
 
-DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "") else " 180"
+DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "180")
 
-MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") if os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
  
 
 async def load_start():
