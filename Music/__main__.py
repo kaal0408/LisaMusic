@@ -19,7 +19,7 @@ with open("./etc/foreground.png", "wb") as file:
     file.write(response.content)
 
 # Directly access!
-BOT_NAME = os.environ.get("BOT_NAME", "kaalxmusic") else "kaalxmusic"
+BOT_NAME = os.environ.get("BOT_NAME", "") else "kaalxmusic"
 
 UPDATE = os.environ.get("UPDATE", "") else "Murat_30_God"
     
