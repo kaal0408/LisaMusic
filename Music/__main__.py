@@ -30,7 +30,7 @@ START_IMG = os.environ.get("SUPPORT", "") if os.environ.get("START_IMG", "") els
 
 DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "180")
 
-MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") if os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") if os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://CALLMEVP:CALLMEVP@cluster0.scvdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
  
 
 async def load_start():
