@@ -10,7 +10,7 @@ from Music.database.functions import clean_restart_stage
 from Music.database.queue import get_active_chats, remove_active_chat
 from Music.tgcalls.calls import run
 from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, BOT_NAME
-
+from Music.config import config
 from Music.config import BOT_NAME
 from Music.config import UPDATE
 from Music.config import SUPPORT
