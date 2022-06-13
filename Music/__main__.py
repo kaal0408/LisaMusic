@@ -11,12 +11,6 @@ from Music.database.queue import get_active_chats, remove_active_chat
 from Music.tgcalls.calls import run
 from Music.config import API_ID, API_HASH, BOT_TOKEN, BG_IMG, BOT_NAME
 from Music.config import *
-from Music.config import BOT_NAME
-# from Music.config import UPDATE
-from Music.config import SUPPORT
-from Music.config import START_IMG
-from Music.config import DURATION_LIMIT
-from Music.config import MONGO_DB_URI
 
 # Directly access!
 UPDATE = os.environ.get("UPDATE", "")
