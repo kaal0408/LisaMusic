@@ -18,35 +18,19 @@ response = requests.get(BG_IMG)
 with open("./etc/foreground.png", "wb") as file:
     file.write(response.content)
 
-if BOT_NAME:
-    BOT_NAME = config.BOT_NAME
-else: 
-    BOT_NAME = 'KaalXMusic'
+# Directly access!
+BOT_NAME = os.environ.get("BOT_NAME", "kaalxmusic") else "kaalxmusic"
 
-if UPDATE:
-    UPDATE = config.UPDATE
-else: 
-    UPDATE = 'Murat_30_God'
+UPDATE = os.environ.get("UPDATE", "") else "Murat_30_God"
+    
+SUPPORT = os.environ.get("SUPPORT", "") else "Murat_30_God"
+    
+START_IMG = os.environ.get("SUPPORT", "") else "https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg"
 
-if SUPPORT:
-    SUPPORT = config.SUPPORT
-else: 
-    SUPPORT = 'Murat_30_God'
+DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "") else " 180"
 
-if START_IMG:
-    START_IMG = config.START_IMG
-else: 
-    START_IMG = 'https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg'
-
-if DURATION_LIMIT:
-    DURATION_LIMIT = config.DURATION_LIMIT
-else: 
-    DURATION_LIMIT = '180'
-
-if MONGO_DB_URI:
-    MONGO_DB_URI = config.MONGO_DB_URI
-else: 
-    MONGO_DB_URI = 'mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority'
+MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
+ 
 
 async def load_start():
     restart_data = await clean_restart_stage()
