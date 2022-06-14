@@ -3,8 +3,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from Music.config import (
     ASSISTANT_NAME,
     BOT_USERNAME,
-    GROUP_SUPPORT,
-    UPDATES_CHANNEL,
 )
 from Process.filters import other_filters2
 from time import time
@@ -75,7 +73,7 @@ Feel free to add me to your groups🎧.
 @Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f01f58c3d9b187ae1d8a1.jpg",
+        photo=f"https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg",
         caption=f"""Here Is The Source Code Fork And Give Stars ✨""",
         reply_markup=InlineKeyboardMarkup(
             [
