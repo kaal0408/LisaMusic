@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from RaiChu.config import (
+from Music.config import (
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
@@ -38,32 +38,33 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-        await message.reply_text(
-        f"""Hello {message.from_user.mention()}, My name is {BOT_NAME}.
-I'm a telegram streaming bot with some useful features.
-Feel free to add me to your groups.
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg",
+        f"""Hello {message.from_user.mention()}💞💞.
+I'm a🎶 telegram streaming bot with some useful features🎵.
+Feel free to add me to your groups🎧.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [                   
                     InlineKeyboardButton(
-                        "Commands & Help ❔", callback_data="cbbasic"
+                        "😕Commands & Help😕 ", callback_data="cbbasic"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "How to Use Me ❓", callback_data="cbhowtouse"
+                        "😔Assistant command😔", callback_data="cbhowtouse"
                     ),
                   ],[
                     InlineKeyboardButton(
-                       "Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                       "💛Updates💛", url=f"https://t.me/Murat_30_God"
                     ),
                     InlineKeyboardButton(
-                       "Support", url=f"https://t.me/{GROUP_SUPPORT}"
+                       "💜Support💜", url=f"https://t.me/Murat_30_God"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕",
+                        "💞 Add Me To Your Group 💞",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ]
@@ -82,7 +83,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/AMANTYA1/RaiChu-MusicV2")
+                        " 🎧ʀᴇᴘᴏ 🎧", url=f"https://github.com/kaal0408/Music")
                 ]
             ]
         ),
