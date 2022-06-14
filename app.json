@@ -1,15 +1,15 @@
 {
-    "name": "RaiChu Music Bot",
+    "name": " Music Bot",
     "description": "Telegram bot for Streaming  Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/b581039c9a18d939d19dd.jpg",
+    "logo": "https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "pyrogram"
     ],
-    "website": "https://t.me/BotDuniyaXd",
-    "repository": "https://github.com/AMANTYA1/RaiChu-MusicV2",
-    "success_url": "https://t.me/BotDuniyaXd",
+    "website": "https://t.me/Murat_30_God",
+    "repository": "https://github.com/kaal0408/Music",
+    "success_url": "https://t.me/Murat_30_God",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -42,22 +42,7 @@
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list, or just fill with your id",
             "required": true
-        },
-        "GROUP_SUPPORT": {
-            "description": "if you have group, then fill the group username here without @",
-            "required": false,
-            "value": "godzilla_chatting"
-        },
-        "UPDATES_CHANNEL": {
-            "description": "if you have channel, then fill the channel username here without @",
-            "required": false,
-            "value": "BotDuniyaXd"
-        },
-        "OWNER_NAME": {
-            "description": "fill with your telegram account username without @",
-            "required": false,
-            "value": "Shubhanshutya"
-        }
+        },       
     },
     "addons": [],
     "buildpacks": [
