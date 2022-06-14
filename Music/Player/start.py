@@ -2,10 +2,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from Music.config import (
     ASSISTANT_NAME,
-    BOT_NAME,
     BOT_USERNAME,
     GROUP_SUPPORT,
-    OWNER_NAME,
     UPDATES_CHANNEL,
 )
 from Process.filters import other_filters2
