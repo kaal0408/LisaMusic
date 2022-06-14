@@ -33,9 +33,8 @@ DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "180")
 MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") if os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://CALLMEVP:CALLMEVP@cluster0.scvdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
  
 
-
-loop = asyncio.get_event_loop_policy().get_event_loop()
-loop.run_until_complete(load_start())
+Client.run()
+idle()
 
 Client(
     ":memory:",
