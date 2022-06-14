@@ -33,31 +33,6 @@ DURATION_LIMIT = os.environ.get("DURATION_LIMIT", "180")
 MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "") if os.environ.get("MONGO_DB_URI", "") else "mongodb+srv://CALLMEVP:CALLMEVP@cluster0.scvdq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
  
 
-async def load_start():
-    restart_data = await clean_restart_stage()
-    if restart_data:
-        print("[INFO]: SENDING RESTART STATUS")
-        try:
-            await app.edit_message_text(
-                restart_data["chat_id"],
-                restart_data["message_id"],
-                "**Restarted the Bot Successfully.**",
-            )
-        except Exception:
-            pass
-    served_chats = []
-    try:
-        chats = await get_active_chats()
-        for chat in chats:
-            served_chats.append(int(chat["chat_id"]))
-    except Exception as e:
-        print("Error came while clearing db")
-    for served_chat in served_chats:
-        try:
-            await remove_active_chat(served_chat)
-        except Exception as e:
-            print("Error came while clearing db")
-    
 
 loop = asyncio.get_event_loop_policy().get_event_loop()
 loop.run_until_complete(load_start())
