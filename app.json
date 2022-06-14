@@ -42,7 +42,7 @@
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list, or just fill with your id",
             "required": true
-        },       
+        }
     },
     "addons": [],
     "buildpacks": [
