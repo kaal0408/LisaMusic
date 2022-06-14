@@ -6,7 +6,7 @@ from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ChatJoinRequest
 from Music.utils.filters import command
 
-from Music import BOT_NAME, BOT_USERNAME
+from Music import BOT_NAME, BOT_USERNAME ,START_IMG
 from Music.config import * 
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
