@@ -34,8 +34,7 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/f6d20eb3b3a7c810c09a0.jpg",
+    await message.reply_text(
         f"""Hello {message.from_user.mention()}💞💞.
 I'm a🎶 telegram streaming bot with some useful features🎵.
 Feel free to add me to your groups🎧.
