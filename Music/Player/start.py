@@ -64,9 +64,9 @@ Feel free to add me to your groups🎧.
                         "💞 Add Me To Your Group 💞",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
-                ]
             ]
-        )
+        ),
+    )
 
 @Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
