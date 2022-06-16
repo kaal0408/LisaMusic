@@ -7,7 +7,7 @@ import aiohttp
 from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
-from RaiChu.config import BOT_NAME, YOUTUBE_IMG_URL
+from Music.config import YOUTUBE_IMG_URL
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
