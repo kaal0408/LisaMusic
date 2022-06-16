@@ -14,7 +14,7 @@ import ffmpeg
 import requests
 from Process.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
-from RaiChu.config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
+from Music.config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
 from Process.filters import command, other_filters
 from Process.queues import QUEUE, add_to_queue
 from Process.main import call_py, aman as user
