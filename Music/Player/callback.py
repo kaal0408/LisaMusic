@@ -50,16 +50,16 @@ Feel free to add me to your groups.
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ **Basic Guide for using this bot:**
+        f"""🎶 **Assistant commands🎶:**
 
-1.) **First, add me to your group.**
-2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
-3.) **After promoting me, type /reload in group to refresh the admin data.**
-3.) **Add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.**
-4.) **Turn on the video chat first before start to play video/music.**
-5.) **Sometimes, reloading the bot by using /reload command can help you to fix some problem.**
+1.) **/realod- To reload the bot.**
+2.) **/gcast - To broadcast a message.**
+3.) **/q - To make a quote.**
+3.) **/tm - to make a telegraph linl.**
+4.) **/userbotjoin - To join assistant id.**
+5.) **/userbotleave,leave - To leave assistant id
+6.) **/leaveall - to leave all group
 
-📌 **If the userbot not joined to video chat, make sure if the video chat already turned on, or type /userbotleave then type /userbotjoin again.**
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @Murat_30_God***""",
         reply_markup=InlineKeyboardMarkup(
@@ -73,24 +73,31 @@ async def cbbasic(_, query: CallbackQuery):
         f"""ℹ️ Command Menu
 
 🤷 » /id - To get user id
-
+🤷 » /uptime - To check uptime
+🤷 » /relaod - To reload the bot
 👩🏻‍💼 » /tm - to get telegraph img link
-
-👩🏻‍💼 » /q - to get reply message in stickers
-
-👩🏻‍💼 » /speedtest - To get Speedtest 
-
-👩🏻‍💼 » /play - Type this with give the song title or youtube link or audio file to play Music. (Remember to don't play YouTube live stream by using this command!, because it will cause unforeseen problems.)
-
-👩🏻‍💼 » /vplay - Type this with give the song title or youtube link or video file to play Video. (Remember to don't play YouTube live video by using this command!, because it will cause unforeseen problems.)
-
-👩🏻‍💼 » /vstream - Type this with give the YouTube live stream video link or m3u8 link to play live Video. (Remember to don't play local audio/video files or non-live YouTube video by using this command!, because it will cause unforeseen problems.)
-
-🤷 » /skip - To Skip current song
-
-🤷 » /repo - To get the repo of Music-Music
-
-🙋 » /end - To end play song in vc.""",
+🤷 » /ping - To check server
+🤷 » /stop - To stop the music
+🤷 » /pause - To pause the music
+🤷 » /resume - To resume the music
+🤷 » /mute - To mute in vc
+🤷 » /unmute - To unmute in vc
+🤷 » /volume - To change the volume
+🤷 » /rmd,clear - To delte all download file
+🤷 » /rmw,clean - To delte all Raw download file
+🤷 » /cleanup -To clean database
+🤷 » /song - To get a song
+🤷 » /vsong - To get a video song
+🤷 » /lyric - To get lyrics to any song
+🤷 » /search - To search an song
+👩🏻‍🤷 »   » /q - to get reply message in stickers
+👩🏻‍🤷 »  » /speedtest - To get Speedtest 
+👩🏻🤷 »  » /play - Type this with give the song title or youtube link or audio file to play Music.
+👩🤷 »   » /vplay - Type this with give the song title or youtube link or video file to play Video. 
+👩🤷 »  » /vstream - Type this with give the YouTube live stream video link or m3u8 link to play live Video.
+🤷🤷 » » /skip - To Skip current song
+🤷🤷 » » /repo - To get the repo of Music-Music
+🙋🤷 » » /end - To end play song in vc.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
