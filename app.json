@@ -26,11 +26,7 @@
         "BOT_USERNAME": {
             "description": "your bot username from @BotFather",
             "required": true
-        },
-        "BOT_NAME": {
-            "description": "fill with your bot name from @BotFather",
-            "required": true
-        },
+        }, 
         "ASSISTANT_NAME": {
             "description": "fill with the assistant username account without @",
             "required": false
