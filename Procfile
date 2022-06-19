@@ -1,1 +1,1 @@
-worker: bash manjeet
+worker: python3 manjeet.py
