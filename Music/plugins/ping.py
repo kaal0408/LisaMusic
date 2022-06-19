@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 ms = "Kaalxuser"
 
 @manjeet.on_message(filters.command(["ping", "Ping"], [".", "!" , "/"]) & filters.me)
-@manjeet.on_message(filters.command(["ping", "Ping"], [".", "!" ,"/"]) & filters.user(SUDO_USER))
+@manjeet.on_message(filters.command(["ping", "Ping"], [".", "!" ,"/"]) & filters.user(SUDO_USERS))
 async def ping(_, message: Message):
     await message.reply_text(f"""⭐ **
 ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱
