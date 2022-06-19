@@ -10,7 +10,7 @@ bot = Client(
     plugins=dict(root="Music.Player"),
     )
 
-aman = Client(
+manjeet = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     session_name=SESSION_NAME,
@@ -25,5 +25,5 @@ call_py = PyTgCalls(aman, overload_quiet_mode=True)
 
 with Client("Music", API_ID, API_HASH, bot_token=BOT_TOKEN) as app:
     me_bot = app.get_me()
-with aman as app:
-    me_aman = app.get_me()
+with manjeet as app:
+    me_manjeet = app.get_me()
