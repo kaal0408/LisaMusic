@@ -1,11 +1,10 @@
 import asyncio
 from pytgcalls import idle
-from Process.main import call_py, bot ,manjeet
+from Process.main import call_py, bot
 
 async def start_bot():
     print("[INFO]: STARTING BOT CLIENT")
     await bot.start()
-    await manjeet.start()
     print("[INFO]: STARTING PYTGCALLS CLIENT")
     await call_py.start()
     await idle()
