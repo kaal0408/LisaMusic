@@ -10,20 +10,20 @@ bot = Client(
     plugins=dict(root="Music.Player"),
     )
 
-manjeet = Client(
+aman = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     session_name=SESSION_NAME,
-    plugins=duct(root=Music.plugins"),
+    
     )
 
-user = PyTgCalls(manjeet,
+user = PyTgCalls(aman,
     cache_duration=100,
     overload_quiet_mode=True,)
 
-call_py = PyTgCalls(manjeet, overload_quiet_mode=True)
+call_py = PyTgCalls(aman, overload_quiet_mode=True)
 
 with Client("Music", API_ID, API_HASH, bot_token=BOT_TOKEN) as app:
     me_bot = app.get_me()
-with manjeet as manjeet:
-    me_manjeet = manjeet.get_me()
+with aman as app:
+    me_aman = app.get_me()
