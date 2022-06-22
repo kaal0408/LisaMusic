@@ -14,7 +14,7 @@ https://replit.com/@dashezup/generate-pyrogram-session-string
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 
-<p align="center"><a href="https://railway.app/new/template?template=https://github.com/kaal0408/Music/tree/railway&envs=SESSION_NAME,ASSISTANT_NAME,BOT_TOKEN,API_ID,API_HASH,BOT_USERNAME,SUDO_USERS"> <img src="https://img.shields.io/badge/Deploy%20To%20Railway-black?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FMusic&plugins=postgresql&envs=SESSION_NAME%2CASSISTANT_NAME%2CBOT_TOKEN%2CAPI_ID%2CAPI_HASH%2CBOT_USERNAME%2CSUDO_USERS"> <img src="https://img.shields.io/badge/Deploy%20To%20Railway-black?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
 
 ## CREDIT 💕
 ```
