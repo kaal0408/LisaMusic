@@ -38,6 +38,8 @@ async def start(_, message: Message):
         f"""Hello {message.from_user.mention()}💞💞.
 I'm a🎶 telegram streaming bot with some useful features🎵.
 Feel free to add me to your groups🎧.
+Total modules -22
+Total commands-40
         """,
         reply_markup=InlineKeyboardMarkup(
             [
