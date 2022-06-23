@@ -59,7 +59,13 @@ async def cbguides(_, query: CallbackQuery):
 4.) **/userbotjoin - To join assistant id.**
 5.) **/userbotleave,leave - To leave assistant id
 6.) **/leaveall - to leave all group
-
+7.) **/define - to use dictionary
+8.) **/github - to check github account 
+9.) **/info - to get information about someone
+10.) **/paste - to paste logs and documents files
+11.) **/tgm - To make telegraph link
+12.) **/wall - To previous wallpaper
+13.) **/whatanime - To check anime
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @Murat_30_God***""",
         reply_markup=InlineKeyboardMarkup(
