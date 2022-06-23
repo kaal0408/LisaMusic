@@ -3,7 +3,7 @@ from pyrogram import filters
 from Music.config import SUDO_USERS
 from Process.main import bot 
 
-OWNER = 825664681
+OWNER = 2068551800
 
 
 @bot.on_message(filters.command("info"))
