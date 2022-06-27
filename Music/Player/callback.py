@@ -45,7 +45,7 @@ Feel free to add me to your groups.
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🎶 ** commands🎶:**
+        f"""🎶  commands🎶""",
          reply_markup=InlineKeyboardMarkup(
             [
                [                   
