@@ -19,28 +19,23 @@ Feel free to add me to your groups.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [                   
+               [                   
                     InlineKeyboardButton(
-                        "Commands & Help ❔", callback_data="cbbasic"
-                    ),
-                ],
+                        "😕Commands 😕 ", callback_data="cbbasic"
+                ]
                 [
                     InlineKeyboardButton(
-                        "Assistant command", callback_data="cbhowtouse"
-                    ),
-                  ],[
-                    InlineKeyboardButton(
-                       "Repo", url=f"https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FMusic&plugins=postgresql&envs=SESSION_NAME%2CASSISTANT_NAME%2CBOT_TOKEN%2CAPI_ID%2CAPI_HASH%2CBOT_USERNAME%2CSUDO_USERS"
-                    ),
-                    InlineKeyboardButton(
-                       "Support", url=f"https://t.me/Murat_30_God"
-                    )
-                ],[
-                    InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
+                       "💛Repo💛", url=f"https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FMusic&plugins=postgresql&envs=SESSION_NAME%2CASSISTANT_NAME%2CBOT_TOKEN%2CAPI_ID%2CAPI_HASH%2CBOT_USERNAME%2CSUDO_USERS"
                 ]
+                    InlineKeyboardButton(
+                       "💜Support💜", url=f"https://t.me/Astro_HelpChat"
+                ]
+                [
+                    InlineKeyboardButton(
+                        "💞 Add Me To Your Group 💞",
+                        url= f"https://t.me/{BOT_USERNAME}?startgroup=true", 
+                ]
+                    
             ]
         ),
      disable_web_page_preview=True
