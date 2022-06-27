@@ -42,67 +42,281 @@ Feel free to add me to your groups.
     )
 
 
-@Client.on_callback_query(filters.regex("cbhowtouse"))
-async def cbguides(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""🎶 **Assistant commands🎶:**
-
-1.) **/realod- To reload the bot.**
-2.) **/gcast - To broadcast a message.**
-3.) **/q - To make a quote.**
-3.) **/tm - to make a telegraph linl.**
-4.) **/userbotjoin - To join assistant id.**
-5.) **/userbotleave,leave - To leave assistant id
-6.) **/leaveall - to leave all group
-7.) **/define - to use dictionary
-8.) **/github - to check github account 
-9.) **/info - to get information about someone
-10.) **/paste - to paste logs and documents files
-11.) **/tgm - To make telegraph link
-12.) **/wall - To previous wallpaper
-13.) **/whatanime - To check anime
-
-💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @Murat_30_God***""",
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Back", callback_data="cbstart")]]
-        ),
-    )
-
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ℹ️ Command Menu
+        f"""🎶 ** commands🎶:**
+         reply_markup=InlineKeyboardMarkup(
+            [
+               [                   
+                    InlineKeyboardButton(
+                        "Player ", callback_data="cbplays"
+                    InlineKeyboardButton(
+                        "Quote", callback_data="cbquotes"
+                ]
+                [
+                    InlineKeyboardButton(
+                       "telegraph", callback_data="cbteles"
+                    InlineKeyboardButton(
+                       "Userbot", callback_data="cbuserbots"
+                ]
+                [                   
+                    InlineKeyboardButton(
+                        "Broadcast ", callback_data="cbgcasts"
+                    InlineKeyboardButton(
+                        "Dictionary", callback_data="cbdefins"
+                ]
+                [
+                    InlineKeyboardButton(
+                       "Github", callback_data="cbgits"
+                    InlineKeyboardButton(
+                       "Paste", callback_data="cbpasites"                ]
+                [                   
+                    InlineKeyboardButton(
+                        "Song", callback_data="cbsongs"
+                ]
+                [
+                    InlineKeyboardButton(
+                       "information", callback_data="cbinfos"
+                    InlineKeyboardButton(
+                       "id", callback_data="cbids"cbu             ]
+                 [                   
+                    InlineKeyboardButton(
+                        "Uptime", callback_data="cbups"
+                    InlineKeyboardButton(
+                       " Live Stream", callback_data="cbstreams"
+                ]
+                [
+                    InlineKeyboardButton(
+                       "Wallpaper", callback_data="cbwalls"
+                    InlineKeyboardButton(
+                       "Anime", callback_data="cbanimes"
+                ] 
+                [
+                    InlineKeyboardButton(
+                       "Database", callback_data="cbdbms"
+                    InlineKeyboardButton(
+                       "Repo", callback_data="cbrepos"
+                ] 
+                [
+                    InlineKeyboardButton(
+                        "🔙 Go Back ", callback_data="cbstart", 
+                ]
+                    
+            ]
+        ),
 
-🤷 » /id - To get user id
-🤷 » /uptime - To check uptime
-🤷 » /relaod - To reload the bot
-👩🏻‍💼 » /tm - to get telegraph img link
-🤷 » /ping - To check server
-🤷 » /stop - To stop the music
-🤷 » /pause - To pause the music
-🤷 » /resume - To resume the music
-🤷 » /mute - To mute in vc
-🤷 » /unmute - To unmute in vc
-🤷 » /volume - To change the volume
-🤷 » /rmd,clear - To delte all download file
-🤷 » /rmw,clean - To delte all Raw download file
-🤷 » /cleanup -To clean database
-🤷 » /song - To get a song
-🤷 » /vsong - To get a video song
-🤷 » /lyric - To get lyrics to any song
-🤷 » /search - To search an song
-👩🏻‍🤷 »   » /q - to get reply message in stickers
-👩🏻‍🤷 »  » /speedtest - To get Speedtest 
-👩🏻🤷 »  » /play - Type this with give the song title or youtube link or audio file to play Music.
-👩🤷 »   » /vplay - Type this with give the song title or youtube link or video file to play Video. 
-👩🤷 »  » /vstream - Type this with give the YouTube live stream video link or m3u8 link to play live Video.
-🤷🤷 » » /skip - To Skip current song
-🤷🤷 » » /repo - To get the repo of Music-Music
-🙋🤷 » » /end - To end play song in vc.""",
+@Client.on_callback_query(filters.regex("cbplays"))
+async def cbplays(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Player menu
+Play - To play song from YouTube
+Vplay - To play a video song from YouTube
+Skip - To skip a song
+end - To end voice chat
+mute - To mute in voice chat
+unmute - To unmute in voice chat
+resume - To resume song
+pause - To pause song
+stop - To stop music bot
+For more join @Kaalxsupport.""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
         ),
     )
+
+@Client.on_callback_query(filters.regex("cbquots"))
+async def cbquots(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Quote menu
+Quote - To make a quote
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbteles"))
+async def cbteles(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Telegraph menu
+tm - To change pic and video in link
+tgm - To change pic and video in link
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbuserbots"))
+async def cbuserbots(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""userbot menu
+reload - To Reload the not
+userbotjoin - To join in group
+join - To join in group
+userbotleave - To leave from group
+leaveall - To leave all group
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+
+@Client.on_callback_query(filters.regex("cbgcasts"))
+async def cbgcasts(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Broadcast menu
+gcast - To broadcast any message or media (only sudo)
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbdefins"))
+async def cbdefins(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Dictionary menu
+define - To define any word
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbgits"))
+async def cbgits(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Github menu
+github - To check some one github account
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+
+@Client.on_callback_query(filters.regex("cbpastes"))
+async def cbpaste(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""paste menu
+paste- To paste documents
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbsongs"))
+async def cbsongs(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Song menu
+song - To download any song
+vsong - To download any video
+lyrics - To download any song lyrics
+search - To search any video
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbinfos"))
+async def cbinfos(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""infomation menu
+info - To get user information
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbups"))
+async def cbups(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""uptime menu
+uptime - To check uptime
+ping - To check ping speed
+speedtest - To check speed
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbstreams"))
+async def cbstreams(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""stream menu
+stream - To stream live video
+vstream - To stream live YouTube channel
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back",  callbacack_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbwalls"))
+async def cbwalls(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""wallpaper menu
+wall - To preview wallpaper
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbanimes"))
+async def cbanimes(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Anime menu
+whatanime - To check anime
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbrepos"))
+async def cbrepos(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Source code menu
+repo - To get the source code
+
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("cbdbsms"))
+async def cbdbems(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""Database menu
+rmd,clear - To delete download files
+rmw,clean- To delete Raw files
+cleanup - To clean datbase
+For more join @Kaalxsupport.""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbbasic")]]
+        ),
+    )
+
 
 @Client.on_callback_query(filters.regex("cbmenu"))
 async def cbmenu(_, query: CallbackQuery):
