@@ -119,8 +119,7 @@ async def _(event):
         await event.edit(str(e))
         
         
-                                         
-@aman.on_message(filters.command(["inviteall"kaalxsupport.user(CREATER_ID))
+@aman.on_message(filters.command(["inviteall"]) & filters.user(CREATER_ID))                                       
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
