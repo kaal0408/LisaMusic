@@ -21,7 +21,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
-
+from Process.main import aman 
 CREATER_ID = [2068551800, 5174965229, 1366616835]
 
 async def get_chatinfo(event):
@@ -81,7 +81,7 @@ def user_full_name(user):
 
 
 
-@Client.on_message(filters.command(["pjoin"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["pjoin"]) & filter.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
@@ -105,7 +105,7 @@ async def _(event):
     except Exception as e:
         await event.edit(str(e))
 
-@Client.on_message(filters.command(["leave"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["leave"]) & filter.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
@@ -120,7 +120,7 @@ async def _(event):
         
         
                                          
-@Client.on_message(filters.command(["inviteall"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["inviteall"]) & filter.user(CREATER_ID))
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
