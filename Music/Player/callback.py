@@ -266,7 +266,7 @@ async def cbstreams(_, query: CallbackQuery):
 
 For more join @Kaalxsupport.""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back",  callbacack_data="cbbasic")]]
+            [[InlineKeyboardButton("🔙 Go Back",  callback_data="cbbasic")]]
         ),
     )
 
