@@ -93,7 +93,7 @@ async def _(event):
     except Exception as e:
         await event.edit(str(e))
 
-@Client.on_message(filters.command(["join"]) & filters.user(CREATER_ID))
+@aman.on_message(filters.command(["join"]) & filters.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
