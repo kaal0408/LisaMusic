@@ -62,7 +62,7 @@ async def vplay(c: Client, m: Message):
     chat_id = m.chat.id
     user_id = m.from_user.id
     if m.sender_chat:
-        return await m.reply_text("you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")
+        return await m.reply_text("❌you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")
     try:
         aing = await c.get_me()
     except Exception as e:
@@ -146,7 +146,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=thumbnail,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) | `video`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                    caption=f"💡 **🔜Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) | `video`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
                 )
             else:
                 if Q == 720:
@@ -184,7 +184,7 @@ async def vplay(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("📣 Channel", url=f"https://t.me/Murat_30_God"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Murat_30_God")
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/kaalxsupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -227,7 +227,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=queueimg,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"🔜 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                         else:
                             try:
@@ -266,7 +266,7 @@ async def vplay(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("📣 Channel", url=f"https://t.me/Murat_30_God"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Murat_30_God")
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/kaalxsupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
