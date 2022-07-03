@@ -63,7 +63,7 @@ async def play(c: Client, m: Message):
     user_id = m.from_user.id
     buttons = audio_markup(user_id)
     if m.sender_chat:
-        return await m.reply_text("You're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")
+        return await m.reply_text("❌You're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights❌.")
     try:
         aing = await c.get_me()
     except Exception as e:
@@ -120,7 +120,7 @@ async def play(c: Client, m: Message):
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **Downloading audio...**")
+            suhu = await replied.reply("📥🔯 **Downloading audio🔯...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -166,7 +166,7 @@ async def play(c: Client, m: Message):
         if len(m.command) < 2:
          await m.reply_photo(
                      photo=f"{IMG_5}",
-                    caption="**Usage: /play Give a Title Song To Play Music or /vplay for Video Play**",
+                    caption="**Usage: ✅ /play Give a Title Song To Play Music or /vplay for Video Play✅ join @kaalxsupport**",
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -214,13 +214,13 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=queueimg,
-                            caption=f"⏳ Added to Queue at {pos}\n\n👤Requested By:{requester}\nInformation- [Here]({info})",
+                            caption=f"📛 Added to Queue at {pos}\n\n👤Requested By:{requester}\nInformation- [Here]({info})",
                             reply_markup=InlineKeyboardMarkup(keyboard),
                         )
                     else:
                         try:
                             await suhu.edit(
-                            f"** Downloader**\n\n**Title**: {title[:22]}\n\n0% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
+                            f"** 🔛Downloader**\n\n**Title**: {title[:22]}\n\n0% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
                         )
                             await call_py.join_group_call(
                                 chat_id,
@@ -234,7 +234,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=playimg,
-                                caption=f"📡 Started Streaming Audio 💡\n\n👤Requested By:{requester}\nInformation- [Here]({info})",
+                                caption=f"🔛 Started Streaming Audio 💡\n\n👤Requested By:{requester}\nInformation- [Here]({info})",
                                 reply_markup=InlineKeyboardMarkup(keyboard),
                             )
                         except Exception as ep:
