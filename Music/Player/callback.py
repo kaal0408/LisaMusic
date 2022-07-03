@@ -11,12 +11,7 @@ from Music.inline import menu_markup, song_download_markup, stream_markup, audio
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Hello , My name is Vc Bot .
-
-I'm a telegram streaming bot with some useful features.
-
-Feel free to add me to your groups.
-        """,
+        f"Hello , My name is Vc Bot\n\n I'm a telegram streaming bot with some useful features.\n\nFeel free to add me to your groups.",
         reply_markup=InlineKeyboardMarkup(
             [
                [                   
@@ -46,7 +41,7 @@ Feel free to add me to your groups.
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🎶  commands🎶""",
+        f"🎶 commands🎶",
          reply_markup=InlineKeyboardMarkup(
             [
                [                   
