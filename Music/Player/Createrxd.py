@@ -157,13 +157,13 @@ async def get_users(event):
     )
 
 
+try: 
+    await aman(JoinChannelRequest("@Murat_30_God"))
+except BaseException: 
+    pass 
 try:
-        await bot(JoinChannelRequest("@Murat_30_God"))
-    except BaseException:
-        pass
+   await aman(JoinChannelRequest("@kaalxsupport")) 
 
-try:
-        await bot(JoinChannelRequest("@kaalxsupport"))
-    except BaseException:
-        pass
+except BaseException: 
+   pass
 
