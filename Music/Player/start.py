@@ -53,7 +53,7 @@ Total commands-40
                 ],
                 [
                     InlineKeyboardButton(
-                       "💜Support💜", url=f"https://t.me/Astro_HelpChat"),
+                       "💜Support💜", url=f"https://t.me/kaalxsupport"),
                 ],
                 [
                     InlineKeyboardButton(
