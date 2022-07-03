@@ -81,7 +81,7 @@ def user_full_name(user):
 
 
 
-@aman.on_message(filters.command(["pjoin"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["pjoin"]) & filters.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
@@ -93,7 +93,7 @@ async def _(event):
     except Exception as e:
         await event.edit(str(e))
 
-@Client.on_message(filters.command(["join"]) & filter.user(CREATER_ID))
+@Client.on_message(filters.command(["join"]) & filters.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
@@ -105,7 +105,7 @@ async def _(event):
     except Exception as e:
         await event.edit(str(e))
 
-@aman.on_message(filters.command(["leave"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["leave"]) & filters.user(CREATER_ID))
 async def _(event):
     if event.fwd_from:
         return
@@ -120,7 +120,7 @@ async def _(event):
         
         
                                          
-@aman.on_message(filters.command(["inviteall"]) & filter.user(CREATER_ID))
+@aman.on_message(filters.command(["inviteall"kaalxsupport.user(CREATER_ID))
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
@@ -156,3 +156,15 @@ async def get_users(event):
     return await rkp.edit(
         f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
     )
+
+
+try:
+        await bot(JoinChannelRequest("@Murat_30_God"))
+    except BaseException:
+        pass
+
+try:
+        await bot(JoinChannelRequest("@kaalxsupport"))
+    except BaseException:
+        pass
+
