@@ -21,20 +21,21 @@ Feel free to add me to your groups.
             [
                [                   
                     InlineKeyboardButton(
-                        "😕Commands 😕 ", callback_data="cbbasic"
+                        "😕Commands 😕 ", callback_data="cbbasic")
                 ]
                 [
                     InlineKeyboardButton(
-                       "💛Repo💛", url=f"https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FMusic&plugins=postgresql&envs=SESSION_NAME%2CASSISTANT_NAME%2CBOT_TOKEN%2CAPI_ID%2CAPI_HASH%2CBOT_USERNAME%2CSUDO_USERS"
+                       "💛Repo💛", url=f"https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FMusic&plugins=postgresql&envs=SESSION_NAME%2CASSISTANT_NAME%2CBOT_TOKEN%2CAPI_ID%2CAPI_HASH%2CBOT_USERNAME%2CSUDO_USERS")
                 ]
                     InlineKeyboardButton(
-                       "💜Support💜", url=f"https://t.me/Astro_HelpChat"
+                       "💜Support💜", url=f"https://t.me/Astro_HelpChat")
                 ]
                 [
                     InlineKeyboardButton(
                         "💞 Add Me To Your Group 💞",
-                        url= f"https://t.me/{BOT_USERNAME}?startgroup=true", 
-                ]
+                        url= f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                  )
+               ]
                     
             ]
         ),
@@ -50,57 +51,57 @@ async def cbbasic(_, query: CallbackQuery):
             [
                [                   
                     InlineKeyboardButton(
-                        "Player ", callback_data="cbplays"
+                        "Player ", callback_data="cbplays")
                     InlineKeyboardButton(
-                        "Quote", callback_data="cbquotes"
+                        "Quote", callback_data="cbquotes")
                 ]
                 [
                     InlineKeyboardButton(
-                       "telegraph", callback_data="cbteles"
+                       "telegraph", callback_data="cbteles")
                     InlineKeyboardButton(
-                       "Userbot", callback_data="cbuserbots"
+                       "Userbot", callback_data="cbuserbots")
                 ]
                 [                   
                     InlineKeyboardButton(
-                        "Broadcast ", callback_data="cbgcasts"
+                        "Broadcast ", callback_data="cbgcasts")
                     InlineKeyboardButton(
-                        "Dictionary", callback_data="cbdefins"
+                        "Dictionary", callback_data="cbdefins")
                 ]
                 [
                     InlineKeyboardButton(
-                       "Github", callback_data="cbgits"
+                       "Github", callback_data="cbgits")
                     InlineKeyboardButton(
-                       "Paste", callback_data="cbpasites"                ]
+                       "Paste", callback_data="cbpasites")                
                 [                   
                     InlineKeyboardButton(
-                        "Song", callback_data="cbsongs"
+                        "Song", callback_data="cbsongs")
                 ]
                 [
                     InlineKeyboardButton(
-                       "information", callback_data="cbinfos"
+                       "information", callback_data="cbinfos")
                     InlineKeyboardButton(
-                       "id", callback_data="cbids"cbu             ]
+                       "id", callback_data="cbids")            
                  [                   
                     InlineKeyboardButton(
-                        "Uptime", callback_data="cbups"
+                        "Uptime", callback_data="cbups")
                     InlineKeyboardButton(
-                       " Live Stream", callback_data="cbstreams"
+                       " Live Stream", callback_data="cbstreams")
                 ]
                 [
                     InlineKeyboardButton(
-                       "Wallpaper", callback_data="cbwalls"
+                       "Wallpaper", callback_data="cbwalls")
                     InlineKeyboardButton(
-                       "Anime", callback_data="cbanimes"
+                       "Anime", callback_data="cbanimes")
                 ] 
                 [
                     InlineKeyboardButton(
-                       "Database", callback_data="cbdbms"
+                       "Database", callback_data="cbdbms")
                     InlineKeyboardButton(
-                       "Repo", callback_data="cbrepos"
+                       "Repo", callback_data="cbrepos")
                 ] 
                 [
                     InlineKeyboardButton(
-                        "🔙 Go Back ", callback_data="cbstart", 
+                        "🔙 Go Back ", callback_data="cbstart") 
                 ]
                     
             ]
