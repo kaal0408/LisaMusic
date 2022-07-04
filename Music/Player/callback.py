@@ -24,7 +24,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                    InlineKeyboardButton(
-                       "💜Support💜", url=f"https://t.me/Astro_HelpChat")
+                       "💜Support💜", url=f"https://t.me/kaalxsupport")
                 ],
                 [
                     InlineKeyboardButton(
