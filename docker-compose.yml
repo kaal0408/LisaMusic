@@ -1,0 +1,12 @@
+version: "1.0"
+services:
+  worker:
+    build: .
+    environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      SUDO_USERS: $SUDO_USERS
+      MONGO_DB: $MONGO_DB
+      DB_URL: $DATABASE_URL
+      STRING_SESSION1: $STRING_SESSION1
+      
