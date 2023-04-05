@@ -2,8 +2,8 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from modules.config import DURATION_LIMIT
-from modules.helpers.errors import DurationLimitError
+from Lisa.config import DURATION_LIMIT
+from Lisa.helpers.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio/best",
