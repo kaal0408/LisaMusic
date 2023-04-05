@@ -1,11 +1,11 @@
 import asyncio
 from time import time
 from datetime import datetime
-from modules.helpers.filters import command
-from modules.helpers.command import commandpro
+from Lisa.helpers.filters import command
+from Lisa.helpers.command import commandpro
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from modules.config import BOT_USERNAME
+from Lisa.config import BOT_USERNAME
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
