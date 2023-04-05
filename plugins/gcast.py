@@ -4,9 +4,9 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
-from modules.clientbot.clientbot import client as aditya
-from modules.config import SUDO_USERS
-from modules import bot
+from Lisa.clientbot.clientbot import client as aditya
+from Lisa.config import SUDO_USERS
+from Lisa import bot
 
 @bot.on_message(filters.command(["gcast", "post", "post"]))
 async def broadcast(_, message: Message):
