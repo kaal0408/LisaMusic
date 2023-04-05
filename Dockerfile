@@ -5,7 +5,7 @@ RUN pip3 install -U pip
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
-COPY . /Alexa/
-WORKDIR /Alexa/
+COPY . /Lisa/
+WORKDIR /Lisa/
 RUN pip3 install -U -r Installer
-CMD python3 -m modules
+CMD python3 -m Lisa
